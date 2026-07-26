@@ -60,7 +60,7 @@ Data Cleaning
                 ↓
 Feature Engineering
                 ↓
-Baseline Models
+Baseline Logistic Regression ✅
                 ↓
 Model Comparison
                 ↓
@@ -119,8 +119,8 @@ Future additions:
 | Dataset  | Telco Customer Churn  |
 | Task     | Binary Classification |
 | Target   | Churn                 |
-| Samples  | *To be completed*     |
-| Features | *To be completed*     |
+| Samples  | 7043                  |
+| Features | 20                    |
 
 ---
 
@@ -135,6 +135,8 @@ The following models will be implemented and evaluated throughout the project:
 * Hyperparameter Optimized Models
 
 Additional models may be included depending on project requirements and experimental results.
+
+Logistic Regression was selected as the baseline classifier because it is simple, interpretable, computationally efficient, and provides a strong reference point for comparing more complex classification algorithms.
 
 ---
 
@@ -183,10 +185,16 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 02 Completed
+Sprint 03 Completed
 
 **Current Phase:**
-Preparing for Baseline Classification Modeling
+Baseline Classification Model ✅
+
+---
+
+## Models Evaluated
+
+- Logistic Regression (Baseline)
 
 ---
 

@@ -51,3 +51,18 @@ All notable changes to this project will be documented in this file.
 
 - Designed Pipeline-based preprocessing workflow.
 - Prevented data leakage by postponing encoding and scaling until model training.
+
+---
+
+## [1.3.0] - 2026-07-27
+
+### Added
+- Implemented the first baseline classification model using Logistic Regression.
+- Built an end-to-end Scikit-learn Pipeline.
+- Integrated preprocessing with ColumnTransformer.
+- Performed train-test split with stratification.
+- Evaluated the model using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and Classification Report.
+
+### Documentation
+- Added Sprint 03 report.
+- Updated project documentation.

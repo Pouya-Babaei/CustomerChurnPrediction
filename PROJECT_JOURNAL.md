@@ -71,3 +71,33 @@ Focused on improving dataset quality and designing a reproducible preprocessing 
 Major decisions included converting `TotalCharges` into a numerical feature, removing unnecessary features, classifying feature types, and planning a Pipeline-based preprocessing strategy to avoid data leakage.
 
 This sprint emphasized engineering decisions rather than model development.
+
+---
+
+## Sprint 03 — Baseline Classification Model
+
+### Goal
+Develop the first baseline classification model using a complete machine learning pipeline.
+
+### Completed Tasks
+
+- Prepared feature matrix (X) and target vector (y).
+- Encoded the target variable.
+- Performed train-test split using stratification.
+- Built a preprocessing pipeline with ColumnTransformer.
+- Trained a Logistic Regression baseline model.
+- Evaluated the model using multiple classification metrics.
+- Interpreted the confusion matrix and business implications.
+
+### Key Findings
+
+- Baseline Accuracy: approximately 81%.
+- Recall for churned customers remains relatively low.
+- The baseline model serves as a reliable benchmark for future experiments.
+- Class imbalance may have influenced the model's performance and should be investigated in future sprints.
+
+### Lessons Learned
+
+- Accuracy alone is insufficient for classification problems.
+- Precision, Recall, and F1-score provide more meaningful insights.
+- Pipeline-based preprocessing effectively prevents data leakage.
