@@ -183,10 +183,10 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 01 Completed
+Sprint 02 Completed
 
 **Current Phase:**
-Data Cleaning & Preprocessing
+Preparing for Baseline Classification Modeling
 
 ---
 

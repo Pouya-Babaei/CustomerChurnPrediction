@@ -61,3 +61,13 @@ Establish a clear understanding of the business problem, explore the dataset, ev
 - Feature Selection
 - Encoding Strategy
 - Build the preprocessing pipeline
+
+---
+
+## Sprint 02
+
+Focused on improving dataset quality and designing a reproducible preprocessing workflow.
+
+Major decisions included converting `TotalCharges` into a numerical feature, removing unnecessary features, classifying feature types, and planning a Pipeline-based preprocessing strategy to avoid data leakage.
+
+This sprint emphasized engineering decisions rather than model development.
