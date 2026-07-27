@@ -130,3 +130,15 @@ Implement the first tree-based classification model and compare its performance 
 - Tree-based models can overfit when using default settings.
 - Model evaluation should consider multiple metrics rather than accuracy alone.
 - Baseline comparisons provide valuable references for future optimization.
+
+---
+
+## Sprint 05
+
+This sprint introduced two additional baseline classification algorithms: K-Nearest Neighbors (KNN) and Gaussian Naive Bayes.
+
+Both models were implemented using the existing preprocessing pipeline to ensure a fair comparison with previous models.
+
+Performance evaluation showed that Logistic Regression remained the strongest overall baseline model. KNN provided balanced performance, while Gaussian Naive Bayes achieved excellent Recall at the expense of Precision and Accuracy.
+
+The sprint reinforced the importance of selecting evaluation metrics according to business objectives rather than relying solely on overall Accuracy.

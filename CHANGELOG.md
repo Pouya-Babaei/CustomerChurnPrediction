@@ -4,6 +4,29 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 05 - K-Nearest Neighbors & Gaussian Naive Bayes
+
+### Added
+
+- Implemented K-Nearest Neighbors (KNN) classification pipeline.
+- Implemented Gaussian Naive Bayes classification pipeline.
+- Evaluated both models using Accuracy, Precision, Recall, and F1-score.
+- Generated confusion matrices and classification reports.
+- Compared four baseline classification models:
+  - Logistic Regression
+  - Decision Tree
+  - K-Nearest Neighbors
+  - Gaussian Naive Bayes
+
+### Insights
+
+- Logistic Regression remained the strongest overall baseline model.
+- Gaussian Naive Bayes achieved the highest Recall while producing many false positives.
+- KNN outperformed the default Decision Tree baseline.
+- Model evaluation emphasized business-oriented metric selection rather than relying solely on Accuracy.
+
+---
+
 ## [1.4.0] - 2026-07-27
 
 ### Added

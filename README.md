@@ -183,12 +183,29 @@ CustomerChurnClassification/
 
 ---
 
+## Project Progress
+
+- ✅ Sprint 01 — Dataset Understanding & Exploratory Data Analysis
+- ✅ Sprint 02 — Data Cleaning & Preprocessing
+- ✅ Sprint 03 — Logistic Regression Baseline
+- ✅ Sprint 04 — Decision Tree Baseline
+- ✅ Sprint 05 — K-Nearest Neighbors & Gaussian Naive Bayes
+- ⏳ Sprint 06 — Random Forest
+- ⏳ Sprint 07 — Support Vector Machine
+- ⏳ Sprint 08 — Model Comparison
+- ⏳ Sprint 09 — Hyperparameter Tuning
+- ⏳ Sprint 10 — Model Explainability
+- ⏳ Sprint 11 — Error Analysis
+- ⏳ Sprint 12 — Final Documentation
+
+---
+
 # Project Status
 
-Sprint 04 Completed
+Sprint 05 Completed
 
 **Current Phase:**
-Decision Tree Baseline ✅
+KNN + GaussianNB Baseline ✅
 
 ---
 
