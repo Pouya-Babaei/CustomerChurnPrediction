@@ -185,16 +185,26 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 03 Completed
+Sprint 04 Completed
 
 **Current Phase:**
-Baseline Classification Model ✅
+Decision Tree Baseline ✅
 
 ---
 
 ## Models Evaluated
 
 - Logistic Regression (Baseline)
+- Decision Tree (Baseline)
+
+---
+
+## Model Performance
+
+| Model | Accuracy | Precision | Recall | F1-score |
+|------|---------:|----------:|-------:|---------:|
+| Logistic Regression | 0.806 | 0.656 | 0.567 | 0.608 |
+| Decision Tree | 0.712 | 0.458 | 0.458 | 0.458 |
 
 ---
 

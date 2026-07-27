@@ -101,3 +101,32 @@ Develop the first baseline classification model using a complete machine learnin
 - Accuracy alone is insufficient for classification problems.
 - Precision, Recall, and F1-score provide more meaningful insights.
 - Pipeline-based preprocessing effectively prevents data leakage.
+
+---
+
+## Sprint 04 — Decision Tree Baseline
+
+### Goal
+
+Implement the first tree-based classification model and compare its performance against the Logistic Regression baseline.
+
+### Completed Tasks
+
+- Built a Decision Tree classification pipeline.
+- Reused the existing preprocessing pipeline.
+- Trained the baseline Decision Tree model.
+- Evaluated model performance using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and Classification Report.
+- Compared Decision Tree with Logistic Regression.
+
+### Key Findings
+
+- The default Decision Tree achieved lower performance than the Logistic Regression baseline.
+- Recall decreased noticeably, indicating that more churned customers were missed.
+- Model complexity alone does not guarantee better predictive performance.
+- Hyperparameter tuning may significantly improve Decision Tree performance in future sprints.
+
+### Lessons Learned
+
+- Tree-based models can overfit when using default settings.
+- Model evaluation should consider multiple metrics rather than accuracy alone.
+- Baseline comparisons provide valuable references for future optimization.
