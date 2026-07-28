@@ -4,6 +4,27 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 08
+
+### Added
+
+- Baseline model comparison notebook
+- Engineering analysis of model performance
+- Model ranking
+- Candidate model selection
+- Technical and business evaluation
+
+### Improved
+
+- Project documentation
+- README progress tracking
+
+### Decision
+
+Selected Logistic Regression, Random Forest, and Support Vector Machine for hyperparameter tuning.
+
+---
+
 ## Sprint 07 - Support Vector Machine Baseline
 
 ### Added

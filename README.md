@@ -195,8 +195,8 @@ CustomerChurnClassification/
 - ✅ Sprint 04 — Decision Tree Baseline
 - ✅ Sprint 05 — K-Nearest Neighbors & Gaussian Naive Bayes
 - ✅ Sprint 06 — Random Forest Baseline
-- ✅ Sprint 07 — Support Vector Machine
-- ⏳ Sprint 08 — Model Comparison
+- ✅ Sprint 07 — Support Vector Machine Baseline
+- ✅ Sprint 08 — Baseline Model Comparison & Candidate Selection
 - ⏳ Sprint 09 — Hyperparameter Tuning
 - ⏳ Sprint 10 — Model Explainability
 - ⏳ Sprint 11 — Error Analysis
@@ -206,10 +206,10 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 07 Completed
+Sprint 08 Completed
 
 **Current Phase:**
-Support Vector Machine Baseline ✅
+Baseline Model Comparison & Candidate Selection ✅
 
 ---
 
@@ -243,6 +243,18 @@ Among all evaluated baseline models, Logistic Regression currently provides the 
 Although Gaussian Naive Bayes achieved the highest Recall, its significantly lower Precision and Accuracy make it less suitable as the primary baseline.
 
 More advanced models will be explored during the hyperparameter tuning phase.
+
+---
+
+## Candidate Models for Hyperparameter Tuning
+
+Based on the baseline comparison, the following models were selected for further optimization:
+
+- Logistic Regression
+- Random Forest
+- Support Vector Machine
+
+These models demonstrated the strongest balance between predictive performance, business value, and optimization potential.
 
 ---
 
