@@ -190,7 +190,7 @@ CustomerChurnClassification/
 - ✅ Sprint 03 — Logistic Regression Baseline
 - ✅ Sprint 04 — Decision Tree Baseline
 - ✅ Sprint 05 — K-Nearest Neighbors & Gaussian Naive Bayes
-- ⏳ Sprint 06 — Random Forest
+- ✅ Sprint 06 — Random Forest Baseline
 - ⏳ Sprint 07 — Support Vector Machine
 - ⏳ Sprint 08 — Model Comparison
 - ⏳ Sprint 09 — Hyperparameter Tuning
@@ -202,10 +202,10 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 05 Completed
+Sprint 06 Completed
 
 **Current Phase:**
-KNN + GaussianNB Baseline ✅
+Random Forest Baseline ✅
 
 ---
 
@@ -213,15 +213,21 @@ KNN + GaussianNB Baseline ✅
 
 - Logistic Regression (Baseline)
 - Decision Tree (Baseline)
-
+- KNN (Baseline)
+- GaussianNB (Baseline)
+- Random Forest (Baseline)
 ---
 
 ## Model Performance
 
-| Model | Accuracy | Precision | Recall | F1-score |
-|------|---------:|----------:|-------:|---------:|
-| Logistic Regression | 0.806 | 0.656 | 0.567 | 0.608 |
-| Decision Tree | 0.712 | 0.458 | 0.458 | 0.458 |
+| Model    |       Acc | Precision |    Recall |        F1 |
+| -------- | --------: | --------: | --------: | --------: |
+| Logistic | **0.806** | **0.656** | **0.567** | **0.608** |
+| DT       |     0.712 |     0.458 |     0.458 |     0.458 |
+| KNN      |     0.761 |     0.552 |     0.544 |     0.548 |
+| NB       |     0.679 |     0.445 | **0.843** |     0.583 |
+| RF       |     0.780 |     0.612 |     0.467 |     0.530 |
+
 
 ---
 

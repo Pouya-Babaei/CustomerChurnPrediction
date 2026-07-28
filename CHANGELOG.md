@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## [Sprint 06] - Random Forest Baseline
+
+### Added
+- Implemented a baseline Random Forest classifier.
+- Integrated Random Forest into the existing preprocessing pipeline.
+- Evaluated model performance using Accuracy, Precision, Recall, and F1-score.
+- Generated Confusion Matrix and Classification Report.
+- Compared Random Forest with all previously implemented baseline models.
+
+### Findings
+- Random Forest outperformed the default Decision Tree.
+- Logistic Regression remained the strongest baseline model.
+- Default Random Forest favored the majority class, resulting in lower Recall.
+- Hyperparameter tuning will be explored in a future sprint.
+
+---
+
 ## Sprint 05 - K-Nearest Neighbors & Gaussian Naive Bayes
 
 ### Added
