@@ -217,3 +217,46 @@ Implement a baseline Support Vector Machine classifier using the existing prepro
 - Feature scaling is essential for SVM.
 - Kernel functions enable SVM to model non-linear decision boundaries.
 - More complex algorithms do not necessarily outperform simpler linear models.
+
+---
+
+# Sprint 08 — Baseline Model Comparison
+
+## Objective
+
+Compare all baseline classification models and identify the most promising candidates for hyperparameter tuning.
+
+## Completed Tasks
+
+- Compared six baseline classifiers.
+- Evaluated Accuracy, Precision, Recall, and F1-score.
+- Analyzed model trade-offs from both technical and business perspectives.
+- Ranked the baseline models.
+- Selected candidate models for optimization.
+
+## Key Findings
+
+- Logistic Regression achieved the strongest overall baseline performance.
+- Gaussian Naive Bayes produced the highest Recall but with a significant loss in Accuracy and Precision.
+- Support Vector Machine delivered competitive results.
+- Random Forest remained a promising candidate due to its optimization potential.
+- Three candidate models were selected for the next Sprint.
+
+## Next Sprint
+
+Hyperparameter tuning of the selected models.
+
+## Project Decision Update
+
+After the baseline comparison, Gaussian Naive Bayes was removed from the hyperparameter tuning stage.
+
+Although it achieved the highest Recall, its overall trade-off (Accuracy, Precision, and modeling assumptions) made it a less suitable candidate.
+
+The final tuning candidates became:
+
+• Logistic Regression
+• Random Forest
+• Support Vector Machine
+
+---
+
