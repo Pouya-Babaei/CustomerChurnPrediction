@@ -246,6 +246,7 @@ More advanced models will be explored during the hyperparameter tuning phase.
 
 ---
 
+<<<<<<< HEAD
 Selected Models
 
 - Logistic Regression
@@ -256,6 +257,17 @@ Selected Models
 
 - Support Vector Machine (SVC)
   • Competitive baseline performance with room for optimization.
+=======
+## Candidate Models for Hyperparameter Tuning
+
+Based on the baseline comparison, the following models were selected for further optimization:
+
+- Logistic Regression
+- Random Forest
+- Support Vector Machine
+
+These models demonstrated the strongest balance between predictive performance, business value, and optimization potential.
+>>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764
 
 ---
 

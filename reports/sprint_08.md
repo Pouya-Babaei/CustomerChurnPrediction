@@ -24,12 +24,15 @@ Compare all baseline classifiers and determine which models should proceed to hy
 - Gaussian Naive Bayes achieved the highest Recall.
 - Random Forest showed strong optimization potential.
 - SVM delivered competitive baseline performance.
+<<<<<<< HEAD
 - Although GaussianNB achieved the highest Recall, it was not selected for hyperparameter tuning because of its weaker overall trade-off and stronger modeling assumptions.
 
 The final candidate models are:
     - Logistic Regression
     - Random Forest
     - SVC
+=======
+>>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764
 
 ## Sprint Outcome
 

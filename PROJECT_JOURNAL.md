@@ -244,6 +244,7 @@ Compare all baseline classification models and identify the most promising candi
 
 ## Next Sprint
 
+<<<<<<< HEAD
 Hyperparameter tuning of the selected models.
 
 ## Project Decision Update
@@ -260,3 +261,6 @@ The final tuning candidates became:
 
 ---
 
+=======
+Hyperparameter tuning of the selected models.
+>>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764

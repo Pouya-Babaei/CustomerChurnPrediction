@@ -23,11 +23,14 @@ All notable changes to this project will be documented in this file.
 
 Selected Logistic Regression, Random Forest, and Support Vector Machine for hyperparameter tuning.
 
+<<<<<<< HEAD
 ### Changed
 
 - Updated hyperparameter tuning candidates.
 - Replaced Gaussian Naive Bayes with Random Forest based on engineering analysis and overall model suitability.
 
+=======
+>>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764
 ---
 
 ## Sprint 07 - Support Vector Machine Baseline
