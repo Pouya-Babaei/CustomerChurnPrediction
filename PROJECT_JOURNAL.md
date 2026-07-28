@@ -142,3 +142,78 @@ Both models were implemented using the existing preprocessing pipeline to ensure
 Performance evaluation showed that Logistic Regression remained the strongest overall baseline model. KNN provided balanced performance, while Gaussian Naive Bayes achieved excellent Recall at the expense of Precision and Accuracy.
 
 The sprint reinforced the importance of selecting evaluation metrics according to business objectives rather than relying solely on overall Accuracy.
+
+---
+
+# Sprint 06 — Random Forest Baseline
+
+## Goal
+
+Implement a baseline Random Forest classifier using the shared preprocessing pipeline and compare its performance with all previously implemented baseline models.
+
+---
+
+## Work Completed
+
+- Implemented the Random Forest classifier within the shared preprocessing pipeline.
+- Trained the baseline Random Forest model using default hyperparameters.
+- Generated predictions on the test dataset.
+- Evaluated model performance using multiple classification metrics.
+- Compared Random Forest against Logistic Regression, Decision Tree, KNN, and Gaussian Naive Bayes.
+- Documented implementation decisions and research findings.
+
+---
+
+## Key Findings
+
+- Random Forest outperformed the single Decision Tree, confirming the benefit of ensemble learning.
+- The model achieved higher Accuracy than several baseline models but lower Recall than Logistic Regression.
+- Logistic Regression continued to provide the best overall trade-off between Precision, Recall, and F1-score.
+- Default Random Forest provides a strong foundation for future hyperparameter tuning.
+
+---
+
+## Lessons Learned
+
+- Ensemble methods generally improve robustness compared to a single Decision Tree.
+- More complex models do not necessarily outperform simpler models on every dataset.
+- Model selection should consider business objectives rather than Accuracy alone.
+- Hyperparameter tuning is essential to fully leverage Random Forest's capabilities.
+
+---
+
+# Sprint 07 — Support Vector Machine Baseline
+
+## Goal
+
+Implement a baseline Support Vector Machine classifier using the existing preprocessing pipeline and compare its performance with all previously implemented baseline models.
+
+---
+
+## Work Completed
+
+- Implemented SVC inside the shared preprocessing pipeline.
+- Trained the baseline SVM classifier.
+- Generated predictions on the test dataset.
+- Evaluated model performance using multiple classification metrics.
+- Compared SVM with Logistic Regression, Decision Tree, KNN, Gaussian Naive Bayes, and Random Forest.
+- Documented research findings and implementation decisions.
+
+---
+
+## Key Findings
+
+- SVM achieved performance close to Logistic Regression.
+- Precision remained almost identical to Logistic Regression.
+- Recall decreased, resulting in more False Negatives.
+- Logistic Regression remains the strongest baseline model for customer churn prediction.
+- Default SVM shows potential for future hyperparameter tuning.
+
+---
+
+## Lessons Learned
+
+- SVM maximizes the decision margin between classes.
+- Feature scaling is essential for SVM.
+- Kernel functions enable SVM to model non-linear decision boundaries.
+- More complex algorithms do not necessarily outperform simpler linear models.

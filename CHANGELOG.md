@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 07 - Support Vector Machine Baseline
+
+### Added
+- Implemented baseline Support Vector Machine (SVM) classifier
+- Added SVM pipeline using the shared preprocessing pipeline
+- Evaluated SVM using Accuracy, Precision, Recall, F1-score, Confusion Matrix, and Classification Report
+- Compared SVM against all previously implemented baseline models
+- Documented research questions and theoretical background for Support Vector Machine
+- Updated project documentation and README
+
+### Findings
+- SVM achieved competitive performance close to Logistic Regression.
+- Precision remained similar to Logistic Regression, while Recall decreased.
+- Logistic Regression continues to provide the best overall trade-off among baseline models.
+
+---
+
 ## [Sprint 06] - Random Forest Baseline
 
 ### Added

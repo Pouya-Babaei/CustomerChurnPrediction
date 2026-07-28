@@ -1,7 +1,5 @@
 # 📊 Customer Churn Classification
 
-**Version:** v1.0.0
-
 ---
 
 # Project Overview
@@ -46,6 +44,7 @@ The goals of this project are to:
 * Perform comprehensive error analysis
 * Deploy the final production model
 * Document every engineering decision throughout the project
+* Compare multiple baseline classifiers using a unified evaluation framework
 
 ---
 
@@ -60,9 +59,10 @@ Data Cleaning
                 ↓
 Feature Engineering
                 ↓
-Baseline Logistic Regression ✅
+Baseline Models
+(Logistic, DT, KNN, NB, RF, SVM)
                 ↓
-Model Comparison
+Baseline Model Comparison                
                 ↓
 Hyperparameter Tuning
                 ↓
@@ -92,6 +92,7 @@ Final Documentation & GitHub Release
 * FastAPI deployment
 * Comprehensive documentation
 * Portfolio-ready implementation
+* Professional evaluation framework
 
 ---
 
@@ -128,11 +129,14 @@ Future additions:
 
 The following models will be implemented and evaluated throughout the project:
 
-* Logistic Regression (Baseline)
-* Decision Tree Classifier
-* Random Forest Classifier
-* Gradient Boosting Models *(if applicable)*
-* Hyperparameter Optimized Models
+• Logistic Regression
+• Decision Tree
+• K-Nearest Neighbors (KNN)
+• Gaussian Naive Bayes
+• Random Forest
+• Support Vector Machine (SVM)
+• Gradient Boosting Models (Planned)
+• Hyperparameter Optimized Models
 
 Additional models may be included depending on project requirements and experimental results.
 
@@ -191,7 +195,7 @@ CustomerChurnClassification/
 - ✅ Sprint 04 — Decision Tree Baseline
 - ✅ Sprint 05 — K-Nearest Neighbors & Gaussian Naive Bayes
 - ✅ Sprint 06 — Random Forest Baseline
-- ⏳ Sprint 07 — Support Vector Machine
+- ✅ Sprint 07 — Support Vector Machine
 - ⏳ Sprint 08 — Model Comparison
 - ⏳ Sprint 09 — Hyperparameter Tuning
 - ⏳ Sprint 10 — Model Explainability
@@ -202,10 +206,10 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 06 Completed
+Sprint 07 Completed
 
 **Current Phase:**
-Random Forest Baseline ✅
+Support Vector Machine Baseline ✅
 
 ---
 
@@ -216,18 +220,29 @@ Random Forest Baseline ✅
 - KNN (Baseline)
 - GaussianNB (Baseline)
 - Random Forest (Baseline)
+- Support Vector Machine (Baseline)
 ---
 
 ## Model Performance
 
-| Model    |       Acc | Precision |    Recall |        F1 |
-| -------- | --------: | --------: | --------: | --------: |
-| Logistic | **0.806** | **0.656** | **0.567** | **0.608** |
-| DT       |     0.712 |     0.458 |     0.458 |     0.458 |
-| KNN      |     0.761 |     0.552 |     0.544 |     0.548 |
-| NB       |     0.679 |     0.445 | **0.843** |     0.583 |
-| RF       |     0.780 |     0.612 |     0.467 |     0.530 |
+| Model        |  Accuracy | Precision |    Recall |        F1 |
+| ------------ | --------: | --------: | --------: | --------: |
+| Logistic     | **0.806** | **0.656** | **0.567** | **0.608** |
+| DecisionTree |     0.712 |     0.458 |     0.458 |     0.458 |
+| KNN          |     0.761 |     0.552 |     0.544 |     0.548 |
+| GaussianNB   |     0.679 |     0.445 | **0.843** |     0.583 |
+| RandomForest |     0.780 |     0.612 |     0.467 |     0.530 |
+| **SVC**      | **0.795** | **0.655** | **0.485** | **0.557** |
 
+---
+
+## Current Best Baseline
+
+Among all evaluated baseline models, Logistic Regression currently provides the best trade-off between Precision, Recall, and F1-score.
+
+Although Gaussian Naive Bayes achieved the highest Recall, its significantly lower Precision and Accuracy make it less suitable as the primary baseline.
+
+More advanced models will be explored during the hyperparameter tuning phase.
 
 ---
 
@@ -243,6 +258,7 @@ Each Sprint includes:
 * Documentation
 * Git version control
 * Sprint retrospective
+* Baseline benchmarking
 
 ---
 
@@ -258,6 +274,9 @@ Planned enhancements include:
 * Model monitoring
 * Retraining strategy
 * MLOps integration
+* Probability calibration
+* Cross-validation
+* Ensemble learning
 
 ---
 
