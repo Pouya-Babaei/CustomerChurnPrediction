@@ -195,9 +195,9 @@ CustomerChurnClassification/
 - ✅ Sprint 04 — Decision Tree Baseline
 - ✅ Sprint 05 — K-Nearest Neighbors & Gaussian Naive Bayes
 - ✅ Sprint 06 — Random Forest Baseline
-- ✅ Sprint 07 — Support Vector Machine Baseline
-- ✅ Sprint 08 — Baseline Model Comparison & Candidate Selection
-- ⏳ Sprint 09 — Hyperparameter Tuning
+- ✅ Sprint 07 — Support Vector Machine
+- ✅ Sprint 08 — Baseline Model Comparison
+- ✅ Sprint 09 — Hyperparameter Tuning
 - ⏳ Sprint 10 — Model Explainability
 - ⏳ Sprint 11 — Error Analysis
 - ⏳ Sprint 12 — Final Documentation
@@ -206,10 +206,10 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 08 Completed
+Sprint 09 Completed
 
 **Current Phase:**
-Baseline Model Comparison & Candidate Selection ✅
+Hyperparameter Tuning ✅
 
 ---
 
@@ -225,14 +225,14 @@ Baseline Model Comparison & Candidate Selection ✅
 
 ## Model Performance
 
-| Model        |  Accuracy | Precision |    Recall |        F1 |
-| ------------ | --------: | --------: | --------: | --------: |
-| Logistic     | **0.806** | **0.656** | **0.567** | **0.608** |
-| DecisionTree |     0.712 |     0.458 |     0.458 |     0.458 |
-| KNN          |     0.761 |     0.552 |     0.544 |     0.548 |
-| GaussianNB   |     0.679 |     0.445 | **0.843** |     0.583 |
-| RandomForest |     0.780 |     0.612 |     0.467 |     0.530 |
-| **SVC**      | **0.795** | **0.655** | **0.485** | **0.557** |
+| Model                       |  Accuracy | Precision |    Recall |        F1 |
+| --------------------------- | --------: | --------: | --------: | --------: |
+| Logistic Regression (Tuned) | **0.806** | **0.656** | **0.567** | **0.608** |
+| Random Forest (Tuned)       |     0.788 |     0.630 |     0.488 |     0.550 |
+| SVC (Tuned)                 |     0.777 |     0.588 |     0.535 |     0.560 |
+
+After hyperparameter optimization, Logistic Regression remained the best-performing model in terms of overall trade-off between Accuracy, Precision, Recall, and F1-score.
+
 
 ---
 

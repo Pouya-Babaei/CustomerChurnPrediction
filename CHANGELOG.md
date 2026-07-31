@@ -4,6 +4,28 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 09 — Hyperparameter Tuning
+
+### Added
+
+- GridSearchCV optimization for Logistic Regression.
+- GridSearchCV optimization for Random Forest.
+- GridSearchCV optimization for Support Vector Machine.
+- Cross-validation based hyperparameter search.
+- Final comparison of tuned candidate models.
+
+### Changed
+
+- Updated README project status.
+- Updated PROJECT_JOURNAL.
+- Added Sprint 09 report.
+
+### Result
+
+Logistic Regression remained the best overall model after hyperparameter optimization.
+
+---
+
 ## Sprint 08
 
 ### Added

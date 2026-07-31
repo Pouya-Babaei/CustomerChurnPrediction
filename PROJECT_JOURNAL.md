@@ -262,5 +262,37 @@ The final tuning candidates became:
 ---
 
 =======
-Hyperparameter tuning of the selected models.
->>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764
+
+# Sprint 09 — Hyperparameter Tuning
+
+## Objective
+
+Optimize the strongest baseline models using GridSearchCV and cross-validation.
+
+## Candidate Models
+
+- Logistic Regression
+- Random Forest
+- Support Vector Machine
+
+## Work Completed
+
+- Defined hyperparameter search spaces for all candidate models.
+- Applied GridSearchCV with 5-fold cross-validation.
+- Optimized models using Recall as the primary scoring metric.
+- Evaluated tuned models on the held-out test dataset.
+- Compared cross-validation performance with final test performance.
+
+## Engineering Decisions
+
+- Selected only the strongest baseline models for tuning to reduce unnecessary computational cost.
+- Used Recall as the optimization metric because minimizing false negatives is critical for customer churn prediction.
+- Kept all preprocessing inside the Pipeline to prevent data leakage during cross-validation.
+
+## Outcome
+
+Hyperparameter tuning produced only minor improvements.
+
+Logistic Regression retained its baseline configuration and remained the strongest overall model.
+
+The results indicate that future improvements are more likely to come from feature engineering, threshold optimization, and explainability rather than increasing model complexity.
