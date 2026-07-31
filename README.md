@@ -87,12 +87,15 @@ Final Documentation & GitHub Release
 * Multiple model comparison
 * Hyperparameter optimization
 * Threshold optimization
+* Feature importance analysis
+* Permutation importance
 * Explainable AI (SHAP)
 * Error analysis
 * FastAPI deployment
 * Comprehensive documentation
 * Portfolio-ready implementation
 * Professional evaluation framework
+
 
 ---
 
@@ -103,10 +106,11 @@ Final Documentation & GitHub Release
 * Pandas
 * Matplotlib
 * Scikit-learn
-
+* SHAP
+  
 Future additions:
 
-* SHAP
+
 * Joblib
 * FastAPI
 * Uvicorn
@@ -198,7 +202,7 @@ CustomerChurnClassification/
 - ✅ Sprint 07 — Support Vector Machine
 - ✅ Sprint 08 — Baseline Model Comparison
 - ✅ Sprint 09 — Hyperparameter Tuning
-- ⏳ Sprint 10 — Model Explainability
+- ✅ Sprint 10 — Model Explainability
 - ⏳ Sprint 11 — Error Analysis
 - ⏳ Sprint 12 — Final Documentation
 
@@ -206,10 +210,10 @@ CustomerChurnClassification/
 
 # Project Status
 
-Sprint 09 Completed
+Sprint 10 Completed
 
 **Current Phase:**
-Hyperparameter Tuning ✅
+Model Explainability ✅
 
 ---
 
@@ -267,7 +271,40 @@ Based on the baseline comparison, the following models were selected for further
 - Support Vector Machine
 
 These models demonstrated the strongest balance between predictive performance, business value, and optimization potential.
->>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764
+
+---
+
+## Explainability
+
+### Logistic Regression Coefficients
+
+![Positive](figures/Sprint10/logistic_positive_coefficients.png)
+
+![Negative](figures/Sprint10/logistic_negative_coefficients.png)
+
+---
+
+### Permutation Importance
+
+![Permutation](figures/Sprint10/permutation_importance.png)
+
+---
+
+### SHAP Summary
+
+![Summary](figures/Sprint10/shap_summary_plot.png)
+
+---
+
+### SHAP Waterfall
+
+![Waterfall](figures/Sprint10/shap_waterfall_example.png)
+
+---
+
+The interactive SHAP Force Plot is available in:
+
+`figures/Sprint10/shap_force_plot.html`
 
 ---
 

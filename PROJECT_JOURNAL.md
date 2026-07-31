@@ -296,3 +296,40 @@ Hyperparameter tuning produced only minor improvements.
 Logistic Regression retained its baseline configuration and remained the strongest overall model.
 
 The results indicate that future improvements are more likely to come from feature engineering, threshold optimization, and explainability rather than increasing model complexity.
+
+---
+
+# Sprint 10 — Model Explainability
+
+## Goal
+
+Improve model interpretability by understanding why the Logistic Regression model makes its predictions and identifying the most influential customer features.
+
+---
+
+## Tasks Completed
+
+- Extracted Logistic Regression coefficients
+- Ranked features based on coefficient magnitude
+- Visualized positive and negative feature effects
+- Applied Permutation Importance
+- Implemented SHAP explainability
+- Generated SHAP Summary Plot
+- Generated SHAP Waterfall Plot
+- Generated SHAP Force Plot
+- Compared global and local explanations
+- Documented engineering findings
+
+---
+
+## Outcome
+
+The explainability analysis confirmed that customer tenure, contract type, and internet service are the strongest drivers of churn prediction.
+
+Combining Logistic Regression coefficients, Permutation Importance, and SHAP produced consistent explanations, increasing confidence in the model and making it suitable for business interpretation.
+
+---
+
+## Sprint Status
+
+✅ Completed

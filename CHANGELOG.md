@@ -4,6 +4,35 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 10 — Model Explainability
+
+### Added
+
+- Logistic Regression coefficient analysis
+- Positive and negative coefficient visualization
+- Permutation Importance analysis
+- SHAP explainability
+- SHAP Summary Plot
+- SHAP Waterfall Plot
+- SHAP Force Plot
+- Explainability engineering analysis
+- Feature interpretation workflow
+
+### Improved
+
+- Model transparency
+- Business interpretability
+- Feature importance validation
+- Stakeholder explainability
+
+### Documentation
+
+- Updated README
+- Updated PROJECT_JOURNAL
+- Updated TEAM_GUIDE references
+
+---
+
 ## Sprint 09 — Hyperparameter Tuning
 
 ### Added
