@@ -62,7 +62,7 @@ Feature Engineering
 Baseline Models
 (Logistic, DT, KNN, NB, RF, SVM)
                 ↓
-Baseline Model Comparison                
+Baseline Model Comparison
                 ↓
 Hyperparameter Tuning
                 ↓
@@ -72,7 +72,9 @@ Explainability (Feature Importance + SHAP)
                 ↓
 Error Analysis
                 ↓
-Model Deployment
+Deployment Preparation
+                ↓
+FastAPI Deployment
                 ↓
 Final Documentation & GitHub Release
 ```
@@ -166,7 +168,7 @@ The final production model will be selected based on both predictive performance
 
 # Repository Structure
 
-```text
+```
 CustomerChurnClassification/
 
 │
@@ -176,6 +178,7 @@ CustomerChurnClassification/
 │
 ├── notebooks/
 ├── models/
+|   ├── config.json
 ├── reports/
 ├── figures/
 │
@@ -202,17 +205,17 @@ CustomerChurnClassification/
 - ✅ Sprint 08 — Baseline Model Comparison
 - ✅ Sprint 09 — Hyperparameter Tuning
 - ✅ Sprint 10 — Model Explainability
-- ✅ Sprint 11 — Error Analysis
-- ⏳ Sprint 12 — Final Documentation
+- ✅ Sprint 12 — Threshold Optimization & Deployment Preparation
+- ⏳ Sprint 13 — FastAPI Deployment
 
 ---
 
 # Project Status
 
-Sprint 10 Completed
+Sprint 12 Completed
 
 **Current Phase:**
-Error Analysis ✅
+Deployment Preparation ✅
 
 ---
 
@@ -239,28 +242,21 @@ After hyperparameter optimization, Logistic Regression remained the best-perform
 
 ---
 
-## Current Best Baseline
+## Final Selected Model
 
-Among all evaluated baseline models, Logistic Regression currently provides the best trade-off between Precision, Recall, and F1-score.
+After evaluating multiple baseline models and performing hyperparameter optimization, Logistic Regression was selected as the final production model.
 
-Although Gaussian Naive Bayes achieved the highest Recall, its significantly lower Precision and Accuracy make it less suitable as the primary baseline.
+Reasons:
 
-More advanced models will be explored during the hyperparameter tuning phase.
+- Best overall balance between Precision and Recall.
+- Highest F1-score among optimized models.
+- Highly interpretable.
+- Computationally efficient.
+- Well suited for threshold optimization.
+- Production-ready deployment pipeline.
 
 ---
 
-<<<<<<< HEAD
-Selected Models
-
-- Logistic Regression
-  • Best overall trade-off between Accuracy, Precision, Recall, and F1.
-
-- Random Forest
-  • Strong optimization potential through hyperparameter tuning.
-
-- Support Vector Machine (SVC)
-  • Competitive baseline performance with room for optimization.
-=======
 ## Candidate Models for Hyperparameter Tuning
 
 Based on the baseline comparison, the following models were selected for further optimization:
@@ -305,6 +301,46 @@ The interactive SHAP Force Plot is available in:
 
 `figures/Sprint10/shap_force_plot.html`
 
+## Error Analysis
+
+### Error Distribution
+
+![Error](figures/Sprint11/contract_barplot.png)
+
+### Tenure Comparison
+
+![Tenure](figures/Sprint11/tenure_boxplot.png)
+
+### Monthly Charges Comparison
+
+![Monthly](figures/Sprint11/monthlycharges_boxplot.png)
+
+---
+
+## Threshold Optimization
+
+The default classification threshold (0.50) was evaluated against multiple operating points.
+
+The final threshold was selected based on business objectives rather than accuracy alone.
+
+Final Threshold:
+
+0.40
+
+This threshold provided the best trade-off between Precision and Recall while minimizing False Negatives for customer churn prediction.
+
+### Threshold Analysis
+
+![Threshold](figures/Sprint12/threshold_optimization.png)
+
+### ROC Curve
+
+![ROC](figures/Sprint12/roc_curve.png)
+
+### Precision–Recall Curve
+
+![PR](figures/Sprint12/pr_curve.png)
+
 ---
 
 # Development Methodology
@@ -320,6 +356,7 @@ Each Sprint includes:
 * Git version control
 * Sprint retrospective
 * Baseline benchmarking
+* Deployment Validation
 
 ---
 
@@ -327,17 +364,21 @@ Each Sprint includes:
 
 Planned enhancements include:
 
-* Advanced feature engineering
-* Explainability using SHAP
-* Probability calibration
-* Threshold optimization
-* FastAPI deployment
-* Model monitoring
-* Retraining strategy
-* MLOps integration
-* Probability calibration
-* Cross-validation
-* Ensemble learning
+* Model Monitoring
+
+* Model Drift Detection
+
+* CI/CD Pipeline
+
+* Docker
+
+* Cloud Deployment
+
+* MLflow Integration
+
+* Automated Retraining
+
+* A/B Testing
 
 ---
 

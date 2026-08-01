@@ -244,7 +244,6 @@ Compare all baseline classification models and identify the most promising candi
 
 ## Next Sprint
 
-<<<<<<< HEAD
 Hyperparameter tuning of the selected models.
 
 ## Project Decision Update
@@ -350,4 +349,49 @@ Deliverables:
 - Error Visualizations
 
 Outcome:
-The project moved beyond evaluation metrics and identified customer groups responsible for most prediction errors, providing clear directions for future feature engineering.
+The project moved beyond evaluation metrics and identified customer groups responsible for most prediction errors, providing valuable insights for threshold optimization and future model improvements.
+
+---
+
+# Sprint 12 — Threshold Optimization & Deployment Preparation
+
+## Goal
+
+Optimize the classification threshold to maximize business value and prepare the trained model for deployment.
+
+---
+
+## Work Completed
+
+- Evaluated multiple classification thresholds.
+- Compared Accuracy, Precision, Recall, and F1 across thresholds.
+- Selected the optimal threshold (0.40).
+- Generated Threshold vs Precision, Recall, and F1 visualizations.
+- Generated ROC Curve.
+- Generated Precision–Recall Curve.
+- Loaded the saved Logistic Regression pipeline.
+- Performed inference on unseen customer data.
+- Validated deployment workflow.
+
+---
+
+## Engineering Decisions
+
+- Selected 0.40 as the final operating threshold.
+- Prioritized Recall over Precision due to business requirements.
+- Reused the saved pipeline to simulate production inference.
+- Stored deployment configuration separately from the trained model.
+
+---
+
+## Outcome
+
+Threshold optimization significantly improved the business usefulness of the model without requiring retraining.
+
+The deployment workflow was successfully validated using a previously saved pipeline, confirming that the project is ready for API deployment in the next sprint.
+
+---
+
+## Sprint Status
+
+✅ Completed

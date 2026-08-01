@@ -4,6 +4,25 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 12
+
+### Added
+- Threshold optimization analysis.
+- ROC Curve visualization.
+- Precision–Recall Curve visualization.
+- Deployment inference example.
+- Production configuration file (config.json).
+
+### Changed
+- Selected final classification threshold (0.40).
+- Updated deployment workflow.
+
+### Documentation
+- Updated README.
+- Updated Project Journal.
+
+---
+
 ## Sprint 11
 
 Added:
