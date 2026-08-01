@@ -333,3 +333,21 @@ Combining Logistic Regression coefficients, Permutation Importance, and SHAP pro
 ## Sprint Status
 
 ✅ Completed
+
+---
+
+## Sprint 11
+
+Focus:
+- Error Analysis
+- Failure Case Investigation
+- Customer Segment Analysis
+
+Deliverables:
+- Prediction Analysis Table
+- False Positive / False Negative Investigation
+- Feature Comparison
+- Error Visualizations
+
+Outcome:
+The project moved beyond evaluation metrics and identified customer groups responsible for most prediction errors, providing clear directions for future feature engineering.

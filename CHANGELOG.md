@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Sprint 11
+
+Added:
+- Prediction analysis table
+- False Positive / False Negative categorization
+- Error Analysis workflow
+- Customer segment comparison
+- Error visualization figures
+- Engineering analysis and documentation
+
+---
+
 ## Sprint 10 — Model Explainability
 
 ### Added
