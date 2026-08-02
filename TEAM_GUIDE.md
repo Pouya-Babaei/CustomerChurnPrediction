@@ -14,10 +14,10 @@ Each Sprint should follow the same development cycle:
 
 1. Research & Planning
 2. Implementation
-3. Model Evaluation (if applicable)
-4. Technical Review
-5. Sprint Retrospective
-6. Documentation Update
+3. Model Evaluation
+4. Engineering Analysis
+5. Documentation
+6. Deployment Validation (when applicable)
 7. Git Commit & Push
 
 ---
@@ -51,6 +51,7 @@ Documentation should include:
 - Key Findings
 - Lessons Learned
 - Next Steps (when applicable)
+- Engineering Decisions
 
 ---
 
@@ -63,6 +64,8 @@ When implementing machine learning models:
 - Use the shared preprocessing pipeline across all models.
 - Ensure that all models are evaluated using the same train/test split for fair comparison.
 - Compare models using multiple evaluation metrics rather than Accuracy alone.
+- Always save the complete preprocessing pipeline together with the trained model.
+- Never fit preprocessing on the entire dataset before train/test split.
 
 ---
 
@@ -76,6 +79,9 @@ Each classification model should be evaluated using:
 - F1-score
 - Confusion Matrix
 - Classification Report
+- ROC-AUC
+- Precision-Recall Curve
+- Threshold Analysis
 
 Business objectives should always be considered before selecting the final model.
 
@@ -93,11 +99,13 @@ Commit messages should clearly describe the completed Sprint.
 
 Example:
 
-```bash
+```
 Sprint 03: Implement Logistic Regression baseline
 Sprint 04: Add Decision Tree baseline
 Sprint 05: Implement KNN and Gaussian Naive Bayes
 ```
+
+Every major milestone should be tagged with a GitHub Release.
 
 ---
 
@@ -110,3 +118,26 @@ Throughout the project we aim to:
 - Compare models fairly.
 - Prioritize business objectives over isolated performance metrics.
 - Document every important engineering decision.
+- Explain model predictions whenever possible.
+- Separate training code from inference code.
+
+---
+
+# Deployment Rules
+
+- Load the trained model only once at application startup.
+- Store deployment configuration separately from the trained model.
+- Validate all incoming requests using Pydantic.
+- Never retrain the model inside the API.
+- Always return prediction probabilities together with the final prediction.
+
+# Future Engineering Roadmap
+
+Future projects may additionally include:
+
+- Docker
+- Model Monitoring
+- Concept Drift Detection
+- Automated Retraining
+- CI/CD
+- Cloud Deployment

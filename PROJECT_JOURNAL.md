@@ -145,6 +145,12 @@ The sprint reinforced the importance of selecting evaluation metrics according t
 
 ---
 
+## Outcome
+
+Logistic Regression remained the strongest baseline while GaussianNB demonstrated the highest Recall.
+
+---
+
 # Sprint 06 — Random Forest Baseline
 
 ## Goal
@@ -258,9 +264,9 @@ The final tuning candidates became:
 • Random Forest
 • Support Vector Machine
 
----
+The comparison stage reduced experimentation cost by selecting only the most promising models for further optimization.
 
-=======
+---
 
 # Sprint 09 — Hyperparameter Tuning
 
@@ -298,6 +304,13 @@ The results indicate that future improvements are more likely to come from featu
 
 ---
 
+## Lessons Learned
+
+- Hyperparameter tuning cannot compensate for limited feature information.
+- Better features often improve performance more than more complex algorithms.
+
+---
+
 # Sprint 10 — Model Explainability
 
 ## Goal
@@ -329,15 +342,25 @@ Combining Logistic Regression coefficients, Permutation Importance, and SHAP pro
 
 ---
 
+## Lessons Learned
+
+- Model interpretability is essential for stakeholder trust.
+- SHAP provides both global and local explanations.
+- Multiple explainability techniques increase confidence in model behavior.
+  
+---
+
 ## Sprint Status
 
 ✅ Completed
 
 ---
 
-## Sprint 11
+# Sprint11 — Error Analysis
 
-Focus:
+## Goal
+
+- Analyze prediction errors to understand model weaknesses.
 - Error Analysis
 - Failure Case Investigation
 - Customer Segment Analysis
@@ -386,12 +409,45 @@ Optimize the classification threshold to maximize business value and prepare the
 
 ## Outcome
 
-Threshold optimization significantly improved the business usefulness of the model without requiring retraining.
+Threshold optimization significantly improved the business usefulness of the model without retraining.
 
-The deployment workflow was successfully validated using a previously saved pipeline, confirming that the project is ready for API deployment in the next sprint.
+The deployment workflow was successfully validated using the saved pipeline.
+
+The project is now production-ready and fully prepared for FastAPI deployment.
 
 ---
 
 ## Sprint Status
 
 ✅ Completed
+
+---
+
+## Lessons Learned
+
+- Threshold optimization can significantly improve business value without retraining the model.
+- A complete saved pipeline greatly simplifies deployment.
+- Separating configuration (threshold) from the trained model improves maintainability.
+- The project is now production-ready and prepared for API deployment.
+
+---
+
+---
+
+# Overall Project Reflection
+
+This project successfully followed an end-to-end machine learning engineering workflow including:
+
+- Business Understanding
+- Exploratory Data Analysis
+- Data Cleaning
+- Feature Engineering
+- Model Development
+- Hyperparameter Tuning
+- Explainability
+- Error Analysis
+- Threshold Optimization
+- Deployment Preparation
+- FastAPI Deployment
+
+The project is considered portfolio-ready and serves as a complete demonstration of a production-oriented machine learning pipeline.

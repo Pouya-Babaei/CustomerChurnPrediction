@@ -1,5 +1,17 @@
 # 📊 Customer Churn Classification
 
+**Version:** v1.0.0
+
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+
+![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
+
+![Status](https://img.shields.io/badge/status-Production%20Ready-success)
+
+![License](https://img.shields.io/badge/license-Educational-lightgrey)
+
 ---
 
 # Project Overview
@@ -110,9 +122,6 @@ Final Documentation & GitHub Release
 * Scikit-learn
 * SHAP
 * Joblib
-  
-Future additions:
-
 * FastAPI
 * Uvicorn
 
@@ -160,7 +169,7 @@ Model performance will be evaluated using multiple classification metrics, inclu
 * ROC-AUC
 * PR-AUC
 * Confusion Matrix
-* Calibration Analysis
+* Calibration Analysis (Planned)
 
 The final production model will be selected based on both predictive performance and business value rather than relying on a single evaluation metric.
 
@@ -178,7 +187,8 @@ CustomerChurnClassification/
 │
 ├── notebooks/
 ├── models/
-|   ├── config.json
+│   ├── logistic_regression_pipeline.joblib
+│   └── config.json
 ├── reports/
 ├── figures/
 │
@@ -205,17 +215,19 @@ CustomerChurnClassification/
 - ✅ Sprint 08 — Baseline Model Comparison
 - ✅ Sprint 09 — Hyperparameter Tuning
 - ✅ Sprint 10 — Model Explainability
+- ✅ Sprint 11 — Error Analysis
 - ✅ Sprint 12 — Threshold Optimization & Deployment Preparation
-- ⏳ Sprint 13 — FastAPI Deployment
+- ✅ Sprint 13 — FastAPI Deployment
 
 ---
 
 # Project Status
 
-Sprint 12 Completed
+✅ Version 1.0.0 Released
 
 **Current Phase:**
-Deployment Preparation ✅
+
+Production Ready 🚀
 
 ---
 
@@ -254,6 +266,8 @@ Reasons:
 - Computationally efficient.
 - Well suited for threshold optimization.
 - Production-ready deployment pipeline.
+
+The final deployment threshold was optimized to 0.40 based on business requirements.
 
 ---
 
@@ -364,19 +378,19 @@ Each Sprint includes:
 
 Planned enhancements include:
 
-* Model Monitoring
-
-* Model Drift Detection
-
-* CI/CD Pipeline
-
 * Docker
 
 * Cloud Deployment
 
-* MLflow Integration
+* CI/CD
 
-* Automated Retraining
+* MLflow
+
+* Monitoring
+
+* Drift Detection
+  
+* Retraining
 
 * A/B Testing
 
@@ -385,3 +399,46 @@ Planned enhancements include:
 # License
 
 This project is developed for educational and portfolio purposes while following professional machine learning engineering practices.
+
+---
+
+# API Demo
+
+## Swagger UI
+
+![Swagger](figures/Sprint13/swagger_ui.png)
+
+---
+
+## Prediction Example
+
+![Prediction](figures/Sprint13/predict_example.png)
+
+---
+
+## Model Information
+
+![ModelInfo](figures/Sprint13/model_info.png)
+
+---
+
+## Health Check
+
+![Health](figures/Sprint13/health_check.png)
+
+---
+
+# Final Release
+
+Version 1.0.0 marks the completion of the first production-ready release of this project.
+
+This release includes:
+
+- End-to-End Machine Learning Pipeline
+- Model Comparison
+- Hyperparameter Optimization
+- Explainability (SHAP)
+- Error Analysis
+- Threshold Optimization
+- FastAPI Deployment
+- Complete Engineering Documentation

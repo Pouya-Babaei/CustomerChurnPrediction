@@ -4,6 +4,35 @@ All notable changes to this project will be documented in this file.
 
 ---
 
+## Upcoming
+
+Planned improvements for future releases:
+
+- Docker containerization
+- Model monitoring
+- Concept drift detection
+- Automated retraining
+- CI/CD pipeline
+
+---
+
+## Sprint 13
+
+### Release
+
+Version 1.0.0
+
+The first production-ready version of the Customer Churn Classification project including:
+
+- End-to-end Machine Learning Pipeline
+- Explainability (SHAP)
+- Threshold Optimization
+- Error Analysis
+- FastAPI Deployment
+- Complete Documentation
+
+---
+
 ## Sprint 12
 
 ### Added
@@ -12,20 +41,27 @@ All notable changes to this project will be documented in this file.
 - Precision–Recall Curve visualization.
 - Deployment inference example.
 - Production configuration file (config.json).
+- FastAPI application.
+- Swagger UI documentation.
+- Health endpoint.
+- Model information endpoint.
+- Production inference endpoint.
 
 ### Changed
 - Selected final classification threshold (0.40).
 - Updated deployment workflow.
 
 ### Documentation
+
 - Updated README.
-- Updated Project Journal.
+- Updated PROJECT_JOURNAL.
+- Updated TEAM_GUIDE.
 
 ---
 
 ## Sprint 11
 
-Added:
+### Added
 - Prediction analysis table
 - False Positive / False Negative categorization
 - Error Analysis workflow
@@ -105,14 +141,11 @@ Logistic Regression remained the best overall model after hyperparameter optimiz
 
 Selected Logistic Regression, Random Forest, and Support Vector Machine for hyperparameter tuning.
 
-<<<<<<< HEAD
 ### Changed
 
 - Updated hyperparameter tuning candidates.
 - Replaced Gaussian Naive Bayes with Random Forest based on engineering analysis and overall model suitability.
 
-=======
->>>>>>> 93476cbc7be3de91c7797db8bb3edb1df0192764
 ---
 
 ## Sprint 07 - Support Vector Machine Baseline
@@ -132,7 +165,7 @@ Selected Logistic Regression, Random Forest, and Support Vector Machine for hype
 
 ---
 
-## [Sprint 06] - Random Forest Baseline
+## Sprint 06 - Random Forest Baseline
 
 ### Added
 - Implemented a baseline Random Forest classifier.
@@ -172,7 +205,7 @@ Selected Logistic Regression, Random Forest, and Support Vector Machine for hype
 
 ---
 
-## [1.4.0] - 2026-07-27
+## Sprint 04 - 2026-07-27
 
 ### Added
 - Implemented the baseline Decision Tree classifier.
@@ -186,7 +219,7 @@ Selected Logistic Regression, Random Forest, and Support Vector Machine for hype
 
 ---
 
-## [1.3.0] - 2026-07-27
+## Sprint 03 - 2026-07-27
 
 ### Added
 - Implemented the first baseline classification model using Logistic Regression.
@@ -201,7 +234,7 @@ Selected Logistic Regression, Random Forest, and Support Vector Machine for hype
 
 ---
 
-## [0.2.0] - Sprint 02
+## Sprint 02
 
 ### Added
 
@@ -223,7 +256,7 @@ Selected Logistic Regression, Random Forest, and Support Vector Machine for hype
 
 ---
 
-## v0.2.0 — Sprint 01 Completed
+## Sprint 01
 
 ### Added
 
